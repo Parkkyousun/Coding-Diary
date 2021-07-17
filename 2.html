@@ -1,21 +1,48 @@
 <!doctype html>
 <html>
+<head>
 <title> Subway Fortuneteller_Coding Baby Diary</title>
 <meta charset="utf-8">
-
-<head>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
- <style>
-  h1 {font-family: Lobster;
-      font-size: 60px;}
-      .smaller-image {height: 350px;}
-      .tiny-image {height: 50px;}
-      .purple-text {color: purple;}
-      .red-text {color: red;}
-  a {color: black; text-decoration: none;}
-  a:visited {color:grey; text-decoration:none;}
-  a:hover {background-color: #e6ddd5;}
-  #bg-exception {background-color: inherit;}
+<style>
+body {margin:0;}
+ h1 {font-family: Lobster;
+     font-size: 60px;
+     border-bottom:4px white dotted;
+     padding: 50px;
+     margin:0;}
+.smaller-image {height: 350px;
+}
+.tiny-image {height: 50px;
+}
+.red-text {color: red;
+}
+ #grid{display:grid;
+      border:3px white dotted;
+      margin: 0;
+      grid-template-columns: 400px 1fr;
+      padding:0;
+}
+
+#grid ol{margin:0;
+ padding: 40px;
+ border-right:3px white dotted
+}
+
+#article{padding-left:60px
+}
+a {color: black; text-decoration: none;}
+a:visited {color:grey; text-decoration:none;}
+a:hover {background-color: #ffedf3;}
+#bg-exception {background-color: inherit;}
+
+@media(max-width: 800px)
+  {#grid{display:block;}
+   #grid ol{ border-right:none;
+             border-bottom:4px white dotted;
+             margin-right: 0;}
+
+}
  </style>
   <h1 style="text-align:center;"> Subway Fortuneteller</h1>
 </head>
@@ -24,42 +51,41 @@
 
   <img class="smaller-image" src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7682.jpeg" alt="이미지" style="position:center;">
 <h3 class="purple-text">말해 보시게..내가 앉아서 집에 갈 상인가..?</h3>
+<div id="grid">
 <ol>
   <li><a href="1.html">Today's MeNu</a> 오늘 먹은 아침 점심 저녁</li>
   <li><a href="2.html" style="color: #725236; text-decoration:none;"><strong>Subway Fortuneteller</strong></a> 지하철 운세</li>
   <li><a href="3.html">Gossip</a> 카더라 통신</li>
   </ol>
+<div id="article">
   <p>
 내 바로 앞에 앉은 사람만 안내리고
 <br>애매하게 먼 자리만 자꾸 내려서 <span class="red-text">끝까지</span> 서서왔ㄷㅏ..
-</p>
+ </p>
+ <h5>웬즈데이, 머피의 법칙 </h5>
+ 우산 들고 나가면 흐리던 날도 활짝 개고<br>
+ 소풍 운동회 야유회땐 소나기<br>
+ 급할 땐 휴지가 없고 휴지가 있을땐 화장실이 없지<br>
+ 또 화장실이 있어도 거기에 휴지가 없어<br>
+ 모처럼 탄 좌석버스 좌석은 하나도 없고<br>
+ 신호등은 내 앞에선 빨간불<br>
+ 그릇을 깨도 비싼것만 깨져 왜 이리 되는 일이 없을까<br>
+ <br>
+ <h5>케로로 행진곡 </h5>
+ 큰맘 먹고 세차하면 비 오고 소풍가면 소나기<br>
+ 급하게 탄 버스 방향 틀리고<br>
+ 건널목에 가면 항상 내 앞에서 빨간불<br>
+ <br>
+  <h5> DJ DOC <머피의 법칙></h5>
+ 친구들과 미팅에 갔었지 못생기고 뚱뚱한애 있길래<br>
+ oh 쟤만빼고 다 괜찮아 그럼 꼭 걔랑나랑 짝이 되지<br>
+ 내가 맘에 들어하는 여자들은 꼭 내 친구 여자친구이거나<br>
+ 우리 형 애인 형 친구 애인 아님 꼭 동성동본<br><br>
+ </div>
+
+</div>
 <p><a href="main.html" id="bg-exception"><img class="tiny-image" src="https://dl.airtable.com/Q80cjdf7TPmTJpMNw65y_large_3-3.png"></a> 손가락을 누르면 첫 화면으로 돌아감.</P>
 
-
-  <div id="discus_thread"><div>
-    <script>
-    /**
-    *  RECOMMEND CONFIGURATIONVARIABLES: EDIT AND UNCOMMENT THE section
-      BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
-    http://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config + function () {
-      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_URL with your page's caconical
-      URL variablesthis.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with
-      your page's unique identifier variables
-    } ;
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-  s.src = 'http://web1-2.disqus.com/embed.is';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head ││ d.body).appendChild(s);
-  })();
-  </script>
-  <nonscript>Please enable Javascript to view the <a
-    href="http://disqus.com/?ref_noscript">comments powered by
-    Disqus.</a></nonscript>
 
   </p>
 </body>
