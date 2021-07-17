@@ -1,0 +1,39 @@
+body {margin:0;}
+ h1 {font-family: Lobster;
+     font-size: 60px;
+     border-bottom:4px white dotted;
+     padding: 50px;
+     margin:0;}
+.smaller-image {height: 350px; display: block; margin:0px auto;
+}
+.tiny-image {height: 50px;
+}
+.red-text {color: red;
+}
+ #grid{display:grid;
+      border:3px white dotted;
+      margin: 0;
+      grid-template-columns: 400px 1fr;
+      padding:0;
+}
+
+#grid ol{margin:0;
+ padding: 40px;
+ border-right:3px white dotted
+}
+
+#article{padding-left:60px
+}
+a {color: black; text-decoration: none;}
+a:visited {color:grey; text-decoration:none;}
+a:hover {background-color: #ffedf3;}
+
+#bg-exception {background-color: inherit; }
+
+@media(max-width: 800px)
+  {#grid{display:block;}
+   #grid ol{ border-right:none;
+             border-bottom:4px white dotted;
+             margin-right: 0;}
+
+}
